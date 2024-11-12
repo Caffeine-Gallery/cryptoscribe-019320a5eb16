@@ -26,10 +26,27 @@ body {
 }
 
 header {
+    margin-bottom: 40px;
+}
+
+.banner {
+    width: 100%;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.banner img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    display: block;
+}
+
+.header-content {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 40px;
     padding-bottom: 20px;
     border-bottom: 1px solid var(--border-color);
 }
@@ -118,7 +135,6 @@ input[type="text"] {
     line-height: 1.8;
 }
 
-/* Loading Spinner */
 .spinner {
     width: 50px;
     height: 50px;
@@ -135,13 +151,12 @@ input[type="text"] {
     }
 }
 
-/* Responsive Design */
 @media (max-width: 768px) {
     .container {
         padding: 10px;
     }
 
-    header {
+    .header-content {
         flex-direction: column;
         text-align: center;
         gap: 20px;
